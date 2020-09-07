@@ -1,0 +1,19 @@
+﻿@model Podcast
+
+@using Podplayer.Core.Models;
+
+    @if (Model.Subscribed)
+    {
+        <form class="unsubscribe-form" asp-controller="Library" asp-action="Unsubscribe"
+              asp-route-id="@Model.Id" asp-route-returnResult="false" method="post">
+            <input id="sub-button" type="image" src="~/images/baseline_favorite_black_48dp.png" alt="Unsubscribe" />
+            <input id="should-remove" type="hidden" name="remove" value="@ViewData["shouldRemove"]" />
+        </form>
+    }
+    else
+    {
+        <form class="subscribe-form" asp-controller="Library" asp-action="Subscribe"
+              asp-route-id="@Model.Id" asp-route-returnResult="false" method="post">
+            <input id="sub-button" type="image" src="~/images/baseline_favorite_border_black_48dp.png" alt="Subscribe" />
+        </form>
+    }

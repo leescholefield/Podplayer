@@ -1,0 +1,45 @@
+﻿@model ICollection<Podcast>
+@using Podplayer.Core.Models
+@using Microsoft.AspNetCore.Identity
+@using Podplayer.Entity.Identity
+@using System.Linq
+
+@inject SignInManager<AppUser> SignInManager
+
+@{
+    string shouldRemove = null
+; try
+    {
+        shouldRemove = (bool)ViewData["removeItemOnUnsubscribe"] == true ? "true" : "false";
+    }
+    catch
+    {
+        shouldRemove = "false";
+    }
+}
+
+@foreach (var podcast in Model)
+{
+    string toolTipText = podcast.Description != null ? new String(podcast.Description.Take(200).ToArray()) : "No description";
+    if (podcast.Description != null && podcast.Description.Length > 200)
+    {
+        toolTipText += "...";
+    }
+    <div class="model-item"
+         data-toggle="tooltip"
+         title="@toolTipText">
+        <a class="internal-nav order-0 text-center" href=@("podcast?id="+podcast.Id)>
+            <img class="model-item-image" src="@podcast.ImageLocation" alt="@podcast.Title image" />
+        </a>
+        <p class="font-weight-bold block-with-text order-1">@podcast.Title</p>
+        @if (podcast.Author != null)
+        {
+            <a class="order-2" href="@Url.Action("author", "search", new { q = podcast.Author})">@podcast.Author</a>
+        }
+        else
+        {
+            <p class="order-2">Author: unknown</p>
+        }
+    </div>
+}
+

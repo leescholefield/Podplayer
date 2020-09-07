@@ -1,0 +1,45 @@
+﻿@model IPaginatedViewModel
+@using Podplayer.Core.Models;
+
+@*
+    This will render a typical page navigation.
+*@
+
+@{ 
+    bool urlContainsParams = Model.UrlBase.Contains("?");
+    string urlFormat = urlContainsParams ? "{0}&page={1}&count={2}" : "{0}?page={1}&count={2}";
+}
+
+<div style="background-color: lightgrey;" class="d-inline-block p-2">
+    <p class="float-left">Page</p>
+    <div class="dropdown float-left ml-2 mr-2">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            @(Model.CurrentPage + 1)
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            @for (int n = 0; n <= Model.TotalPages; n++)
+            {
+                var url = String.Format(urlFormat, Model.UrlBase, n, Model.RequestedNumberOfItems);
+                <a class="dropdown-item @(n == Model.CurrentPage ? "active" : "")" href="@url">@(n + 1)</a>
+            }
+        </ul>
+    </div>
+    <p class="float-left">of @(Model.TotalPages + 1)</p>
+
+@{
+    if (Model.CurrentPage > 0)
+    {
+        var prevUrl = String.Format(urlFormat, Model.UrlBase, Model.CurrentPage - 1, Model.RequestedNumberOfItems);
+        <a class="btn btn-primary ml-2" href=@prevUrl>Prev</a>
+    }
+}
+
+@{
+    if (Model.CurrentPage < Model.TotalPages)
+    {
+        var nextUrl = String.Format(urlFormat, Model.UrlBase, Model.CurrentPage + 1, Model.RequestedNumberOfItems);
+        <a class="btn btn-primary ml-2" href=@nextUrl>Next</a>
+    }
+}
+</div>

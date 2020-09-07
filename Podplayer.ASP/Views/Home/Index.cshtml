@@ -1,0 +1,27 @@
+﻿@model HomeViewModel
+@using Podplayer.Core.Models;
+@{
+    ViewData["Title"] = "Home";
+}
+
+@* Search bar*@
+<div class="container" style="height: 40px;">
+    @await  Component.InvokeAsync("SearchBar")
+</div>
+
+@* Latest section *@
+<div class="mt-5">
+
+    @{ foreach (var cat in Model.Models)
+        {
+            var pods = new List<Podcast>();
+            foreach (var c in cat.Podcasts) { pods.Add(c.Podcast); };
+            <div style="margin-bottom: 50px;" class="clearfix">   
+                <h2 class="highlight-color text-center">@cat.Title</h2>
+                @await Html.PartialAsync("_ModelList", pods)
+                <a class="float-right mr-5 highlight-color" href="/search/category?cat=@cat.Title.ToLower()">See more</a>
+            </div>
+        }
+    }
+
+</div>

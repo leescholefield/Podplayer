@@ -1,0 +1,29 @@
+﻿@model ICollection<Creator>
+@using Podplayer.Core.Models
+
+@foreach (var creator in Model)
+{
+    <div class="clearfix mb-5">
+        <div>
+            @*Title by Author*@
+            <h5 class="font-weight-bold">@creator.Title</h5>
+            @{ 
+                int counter = 0;
+                foreach(var podcast in creator.Podcasts)
+                {
+                    if (counter <= 5)
+                    {
+                        counter++;
+                        <div>
+                           <p style="padding-left: 20px;"><span class="highlight-color">&#9658; </span><a href="@("/podcast?id="+podcast.PodcastId)">@podcast.Podcast.Title</a> </p>
+                        </div>
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+        </div>
+    </div>        
+}

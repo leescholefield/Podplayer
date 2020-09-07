@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cc="http://web.resource.org/cc/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <channel>
+    <atom:link href="https://revolutionspodcast.libsyn.com/rss/" rel="self" type="application/rss+xml"/>
+    <title>Revolutions</title>
+    <pubDate>Sun, 05 Apr 2020 12:48:26 +0000</pubDate>
+    <lastBuildDate>Sat, 09 May 2020 20:05:05 +0000</lastBuildDate>
+    <generator>Libsyn WebEngine 2.0</generator>
+    <link>http://www.revolutionspodcast.com</link>
+    <language>en</language>
+    <copyright><![CDATA[2013-Present]]></copyright>
+    <docs>http://www.revolutionspodcast.com</docs>
+    <managingEditor>revolutionspodcast@gmail.com (revolutionspodcast@gmail.com)</managingEditor>
+    <itunes:summary><![CDATA[A weekly podcasting exploring great political revolutions. Now:   The Russian Revolution Next: ???]]></itunes:summary>
+    <image>
+      <url>https://ssl-static.libsyn.com/p/assets/3/4/5/f/345fbd6a253649c0/RevolutionsLogo_V2.jpg</url>
+      <title>Revolutions</title>
+      <link><![CDATA[http://www.revolutionspodcast.com]]></link>
+    </image>
+    <itunes:author>Mike Duncan</itunes:author>
+    <itunes:keywords>revolution,revolutions</itunes:keywords>
+    <itunes:category text="History"/>
+    <itunes:category text="Education"></itunes:category>
+    <itunes:category text="News">
+      <itunes:category text="Politics"/>
+    </itunes:category>
+    <itunes:image href="https://ssl-static.libsyn.com/p/assets/3/4/5/f/345fbd6a253649c0/RevolutionsLogo_V2.jpg" />
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:owner>
+      <itunes:name><![CDATA[Mike Duncan]]></itunes:name>
+      <itunes:email>revolutionspodcast@gmail.com</itunes:email>
+    </itunes:owner>
+    <description><![CDATA[A weekly podcasting exploring great political revolutions. Now:   The Russian Revolution Next: ???]]></description>
+    <itunes:subtitle><![CDATA[A weekly podcast series examining great political revolutions. Now: The French Revolution. Next: The Haitian Revolution.]]></itunes:subtitle>
+    <itunes:type>serial</itunes:type>
+    <item>
+      <title>10.39- The End of Part I</title>
+      <pubDate>Sun, 05 Apr 2020 12:48:26 +0000</pubDate>
+      <guid isPermaLink="false"><![CDATA[72594065-e1fa-4b36-9482-5f4d91639ad5]]></guid>
+      <link><![CDATA[http://revolutionspodcast.libsyn.com/1039-the-end-of-part-i]]></link>
+      <itunes:image href="https://ssl-static.libsyn.com/p/assets/3/4/5/f/345fbd6a253649c0/RevolutionsLogo_V2.jpg" />
+      <description><![CDATA[<p>Maybe if Nicholas hadn't been so set on rejecting the verdict of 1905, there wouldn't be a Part II to look forward to.</p>]]></description>
+      <content:encoded><![CDATA[<p>Maybe if Nicholas hadn't been so set on rejecting the verdict of 1905, there wouldn't be a Part II to look forward to.</p>]]></content:encoded>
+      <enclosure length="75038639" type="audio/mpeg" url="https://traffic.libsyn.com/secure/revolutionspodcast/10.39-_The_End_of_Part_1_Master.mp3?dest-id=159998" />
+      <itunes:duration>39:05</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle><![CDATA[Maybe if Nicholas hadn't been so set on rejecting the verdict of 1905, there wouldn't be a Part II to look forward to.]]></itunes:subtitle>
+      <itunes:season>10</itunes:season>
+      <itunes:episode>40</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+    <item>
+      <title>10.38- The Days of Freedom </title>
+      <pubDate>Sun, 29 Mar 2020 19:33:47 +0000</pubDate>
+      <guid isPermaLink="false"><![CDATA[1119099c-ab21-4f4a-a8f2-b96cdfeeed1e]]></guid>
+      <link><![CDATA[http://revolutionspodcast.libsyn.com/1038-the-days-of-freedom]]></link>
+      <itunes:image href="https://ssl-static.libsyn.com/p/assets/3/4/5/f/345fbd6a253649c0/RevolutionsLogo_V2.jpg" />
+      <description><![CDATA[<p>The Days of Freedom could be numbered in days.</p>]]></description>
+      <content:encoded><![CDATA[<p>The Days of Freedom could be numbered in days.</p>]]></content:encoded>
+      <enclosure length="77511286" type="audio/mpeg" url="https://traffic.libsyn.com/secure/revolutionspodcast/10.38-_The_Days_of_Freedom_Master.mp3?dest-id=159998" />
+      <itunes:duration>40:23</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle><![CDATA[The Days of Freedom could be numbered in days.]]></itunes:subtitle>
+      <itunes:season>10</itunes:season>
+      <itunes:episode>39</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+    <item>
+      <title>10.37- The General Strike</title>
+      <pubDate>Sun, 22 Mar 2020 15:11:13 +0000</pubDate>
+      <guid isPermaLink="false"><![CDATA[4c272e4d-3563-4127-ad27-aad91f99be21]]></guid>
+      <link><![CDATA[http://revolutionspodcast.libsyn.com/1037-the-general-strike]]></link>
+      <itunes:image href="https://ssl-static.libsyn.com/p/assets/3/4/5/f/345fbd6a253649c0/RevolutionsLogo_V2.jpg" />
+      <description><![CDATA[<p>That time everyone stayed home from work. </p> <p>Sponsor: <a href= "http://audible.com/revolutions">audible.com/revolutions</a>. </p>]]></description>
+      <content:encoded><![CDATA[<p>That time everyone stayed home from work. </p> <p>Sponsor: <a href= "http://audible.com/revolutions">audible.com/revolutions</a>. </p>]]></content:encoded>
+      <enclosure length="65916262" type="audio/mpeg" url="https://traffic.libsyn.com/secure/revolutionspodcast/10.37-_The_General_Strike_Master.mp3?dest-id=159998" />
+      <itunes:duration>34:20</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords />
+      <itunes:subtitle><![CDATA[That time everyone stayed home from work.  Sponsor: . ]]></itunes:subtitle>
+      <itunes:season>10</itunes:season>
+      <itunes:episode>38</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+  </channel>
+</rss>

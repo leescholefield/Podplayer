@@ -1,0 +1,33 @@
+﻿@model ICollection<Podcast>
+@using Podplayer.Core.Models
+
+@foreach (var podcast in Model)
+{
+    <div class="clearfix mb-5">
+        <div class="w-25">
+            <a class="internal-nav float-left" href=@("podcast?id="+podcast.Id)>
+                <img class="model-item-image" src="@podcast.ImageLocation" alt="@podcast.Title image" />
+            </a>
+        </div>
+        <div class="float-left w-75 pl-5">
+            @*Title by Author*@
+            <p><span class="font-weight-bold">@podcast.Title</span> by
+            <span>
+            @if (podcast.Author != null)
+            {
+                <a href="@Url.Action("Index", "Creator", new { n = podcast.Author})">@podcast.Author</a>
+            }
+            else
+            {
+                <p>Author: unknown</p>
+            }
+            </span>
+            </p>
+            @* Description *@
+            <div class="ep-details-large">@Html.Raw(podcast.Description)</div>
+            <div class="details-expand text-center">
+                <img class="expand-icon" style="max-height: 20px;" src="~/images/expand_more.png" alt="Expand description" />
+            </div>
+        </div>
+    </div>
+}

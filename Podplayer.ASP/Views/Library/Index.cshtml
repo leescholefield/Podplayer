@@ -1,0 +1,15 @@
+﻿@model ICollection<Podcast>
+@using Podplayer.Core.Models;
+@{
+    ViewData["Title"] = "Library";
+}
+
+<h1>Library</h1>
+<div class="mt-5">
+
+    <h1 class="highlight-color text-center">Latest</h1>
+
+    @await Html.PartialAsync("_ModelList", Model, new ViewDataDictionary(ViewData) { { "removeItemOnUnsubscribe", true } })
+
+</div>
+

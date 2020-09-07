@@ -1,0 +1,19 @@
+﻿@model SearchResultViewModel
+@{
+    ViewData["Title"] = "Search | " + Model.CategoryQuery;
+}
+
+@*Top bar *@
+<div style="border-bottom: 0.5px solid gray;">
+    <form asp-controller="Search" asp-action="Index" method="get"
+          style="height: 100%;"
+          class="internal-form search-bar">
+        <h3>
+            Showing Podcasts in <span class="highlight-color">@Model.CategoryQuery</span>
+        </h3>
+    </form>
+</div>
+
+<div>
+    @await Html.PartialAsync("_ModelPane", Model)
+</div>

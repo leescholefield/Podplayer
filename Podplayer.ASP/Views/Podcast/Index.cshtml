@@ -1,0 +1,64 @@
+﻿@model PodcastViewModel
+
+@using Microsoft.AspNetCore.Identity
+@using Podplayer.Entity.Identity
+
+@inject SignInManager<AppUser> SignInManager
+
+@{
+    ViewData["Title"] = Model.Podcast.Title;
+}
+
+<div class="d-none podcast-rss-loc" id="@Model.Podcast.RssLocation"></div>
+<div class="clearfix mb-5 podcast-details" style="width: 100%;">
+    <img class="podcast-image float-left" src="@Model.Podcast.ImageLocation" style="width: 20%;" />
+    <div class="float-left" style="width: 78%;">
+        <div class="clearfix">
+            <h1 class="float-left"><span class="highlight-color">@Model.Podcast.Title</span> by <span class="highlight-color podcast-author">@Model.Podcast.Author</span></h1>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <div class="float-right">
+                    @await Html.PartialAsync("_SubscribePartial", Model.Podcast, new ViewDataDictionary(ViewData) { { "shouldRemove", "false" } })
+                </div>
+            }
+        </div>
+        <div>@Html.Raw(Model.Podcast.Description)</div>
+    </div>
+</div>
+<table id="ep-table" style="width: 100%;">
+    <colgroup>
+        <col span="1" style="width: 5%;" />
+        <col span="1" style="width: 75%;" />
+        <col span="1" style="width: 15%;" />
+        <col span="1" style="width: 10%;" />
+    </colgroup>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Title</th>
+            <th id="episode-date">Released</th>
+            <th>Length</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ep in Model.Podcast.Episodes)
+        {
+            <tr class="podcast-episode">
+                <td>
+                    <input class="play-button" type="image" src="~/images/play.png" id="@ep.Uri.AbsoluteUri" />
+                </td>
+                <td>
+                    <div>
+                        <p class="font-weight-bold episode-title">@ep.Title</p>
+                        <div class="ep-details">@Html.Raw(ep.Description)</div>
+                        <div class="details-expand text-center">
+                            <img class="expand-icon" style="max-height: 20px;" src="~/images/expand_more.png" alt="Expand description" />
+                        </div>
+                    </div>
+                </td>
+                <td>@ep.PubDateString</td>
+                <td>@ep.Duration</td>
+            </tr>
+        }
+    </tbody>
+</table>

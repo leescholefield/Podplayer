@@ -1,0 +1,31 @@
+﻿@model SearchResultViewModel
+
+@* Left menu *@
+<div class="float-left w-25">
+    @* Result type navigation *@
+    <div style="        border-bottom: 0.5px solid gray;">
+        <ul class="list-unstyled">
+            <li><a href="@String.Format("/Search?q={0}", Model.TermQuery)">Everything</a></li>
+            <li><a href="@String.Format("/Search/podcast?q={0}", Model.TermQuery)">Podcasts</a></li>
+            <li><a href="@String.Format("/Search/author?q={0}", Model.TermQuery)">Author</a></li>
+        </ul>
+    </div>
+    @* Add custom urls invitation *@
+    <p>Can't find the podcast you're looking for? Try adding a custom RSS url.</p>
+    <form asp-controller="Podcast" asp-action="Index" method="get" class="internal-form">
+        <input type="text" name="podUrl" placeholder="RSS url" class="p-0 border-0 muted-color-bg" style="width: 80%; height: 100%;" />
+        <input type="submit" value="Add" class="highlight-color-bg text-light border-0" style="width: 10%; height: 100%;" />
+    </form>
+</div>
+
+<div class="float-left w-75 mt-5">
+    <div>
+        @await Html.PartialAsync("_ModelListDetailed", Model.Models)
+    </div>
+    @if (Model.TotalPages > 0)
+    {
+        <div class="text-center mt-5">
+            @await Component.InvokeAsync("PaginationNav", Model)
+        </div>
+    }
+</div>

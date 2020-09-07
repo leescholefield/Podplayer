@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Podplayer.Core", "Podplayer.Core\Podplayer.Core.csproj", "{F89732C0-3C64-483F-B1AE-A25F2B7AADFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Podplayer.Entity", "Podplayer.Entity\Podplayer.Entity.csproj", "{AD320138-85F8-4D49-BF3A-4491CCD8AE1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Podplayer.ASP", "Podplayer.ASP\Podplayer.ASP.csproj", "{AA3DB38F-0AE6-4C21-A26B-1C0446A4FF74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Podplayer.CoreTests", "Podplayer.CoreTests\Podplayer.CoreTests.csproj", "{F441537B-BC7F-46EB-AE02-AE9BA97BBF3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Podplayer.ASPTests", "Podplayer.ASPTests\Podplayer.ASPTests.csproj", "{2C77730A-8376-425F-A468-A9147BB35344}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CE0B67E-A048-4AF9-9167-57BC7E834AD0}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F89732C0-3C64-483F-B1AE-A25F2B7AADFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F89732C0-3C64-483F-B1AE-A25F2B7AADFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F89732C0-3C64-483F-B1AE-A25F2B7AADFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F89732C0-3C64-483F-B1AE-A25F2B7AADFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD320138-85F8-4D49-BF3A-4491CCD8AE1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD320138-85F8-4D49-BF3A-4491CCD8AE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD320138-85F8-4D49-BF3A-4491CCD8AE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD320138-85F8-4D49-BF3A-4491CCD8AE1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3DB38F-0AE6-4C21-A26B-1C0446A4FF74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3DB38F-0AE6-4C21-A26B-1C0446A4FF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3DB38F-0AE6-4C21-A26B-1C0446A4FF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3DB38F-0AE6-4C21-A26B-1C0446A4FF74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F441537B-BC7F-46EB-AE02-AE9BA97BBF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F441537B-BC7F-46EB-AE02-AE9BA97BBF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F441537B-BC7F-46EB-AE02-AE9BA97BBF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F441537B-BC7F-46EB-AE02-AE9BA97BBF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C77730A-8376-425F-A468-A9147BB35344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C77730A-8376-425F-A468-A9147BB35344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C77730A-8376-425F-A468-A9147BB35344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C77730A-8376-425F-A468-A9147BB35344}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5913A75-A4FF-4C34-BEC2-074FCA696F22}
+	EndGlobalSection
+EndGlobal
