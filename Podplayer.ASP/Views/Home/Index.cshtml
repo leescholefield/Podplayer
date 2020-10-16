@@ -19,7 +19,7 @@
             <div style="margin-bottom: 50px;" class="clearfix">   
                 <h2 class="highlight-color text-center">@cat.Title</h2>
                 @await Html.PartialAsync("_ModelList", pods)
-                <a class="float-right mr-5 highlight-color" href="/search/category?cat=@cat.Title.ToLower()">See more</a>
+                <a class="float-right mr-5 highlight-color internal-nav" href="/search/category?cat=@cat.Title.ToLower()">See more</a>
             </div>
         }
     }
