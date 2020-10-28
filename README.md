@@ -15,3 +15,7 @@ This project is structured in an MVC pattern.
 * Podplayer.Core this defines our Model objects and common service interfaces so we can swap out our database if need-be. As well as the logic for parsing a RSS XML feed.
 
 ### Screenshots
+
+![Home screen](./Screenshots/homescreen.png)
+![Podcast Rss Feed](./Screenshots/rss.png)
+![Playing an episode](./Screenshots/playing.png)
